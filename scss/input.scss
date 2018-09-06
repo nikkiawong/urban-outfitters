@@ -1,11 +1,17 @@
+$light-gray: #ddd;
+
 * {
   box-sizing: border-box;
   font-family: helvetica, sans-serif;
 }
 
+body {
+  font-size: 12px;
+}
+
 .full-width-nav {
   margin-bottom: 60px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $light-gray;
 }
 
 .nav-items {
@@ -30,28 +36,47 @@
 .nav-links {
   display: flex;
   margin-left: 15%;
-
   ul {
     list-style-position: inside; padding-left: 0;
     li {
       display: inline;
       width: (100% / 6);
       padding: 10px;
-
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: $light-gray;
+      }
     }
   }
 }
 
-.nav-search {
-  display: flex;
-  justify-content: flex-end;
-  width: 35%;
-  height: 60%;
+#red {
+  color: red;
+  &:hover {
+    color: $light-gray;
+  }
+}
 
+.nav-signin-shop {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  color: $light-gray;
+  a {
+    color: #aaa;
+    text-decoration: none;
+    &:hover {
+      color: black;
+    }
+  }
 }
 
 @mixin rowStyle {
   display: flex;
+
   height: auto;
   max-width: 1441px;
   flex-direction: row;
@@ -66,7 +91,6 @@
 @mixin columnStyle {
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -80,6 +104,10 @@
   max-width: 100%;
   height: auto;
   display: inline-block;
+  &:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
 }
 
 .button-row {
@@ -88,6 +116,18 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  bottom: 100px;
+  bottom: 68px;
   list-style-position: inside; padding-left: 0;
+  margin-bottom: -20px;
+}
+
+.buttonFalse {
+  background-color: white;
+  padding: 8px 25px 7px 25px;
+  letter-spacing: .09rem;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
 }

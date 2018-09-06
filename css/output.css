@@ -3,9 +3,13 @@
   font-family: helvetica, sans-serif;
 }
 
+body {
+  font-size: 12px;
+}
+
 .full-width-nav {
   margin-bottom: 60px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #ddd;
 }
 
 .nav-items {
@@ -37,12 +41,33 @@
   width: 16.6666666667%;
   padding: 10px;
 }
+.nav-links ul a {
+  color: black;
+  text-decoration: none;
+}
+.nav-links ul a:hover {
+  color: #ddd;
+}
 
-.nav-search {
+#red {
+  color: red;
+}
+#red:hover {
+  color: #ddd;
+}
+
+.nav-signin-shop {
   display: flex;
-  justify-content: flex-end;
-  width: 35%;
-  height: 60%;
+  justify-content: space-between;
+  width: 15%;
+  color: #ddd;
+}
+.nav-signin-shop a {
+  color: #aaa;
+  text-decoration: none;
+}
+.nav-signin-shop a:hover {
+  color: black;
 }
 
 .top-row, .bottom-row {
@@ -66,6 +91,10 @@
   height: auto;
   display: inline-block;
 }
+.main-images:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
 
 .button-row {
   display: inline-flex;
@@ -73,9 +102,21 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  bottom: 100px;
+  bottom: 68px;
   list-style-position: inside;
   padding-left: 0;
+  margin-bottom: -20px;
+}
+
+.buttonFalse {
+  background-color: white;
+  padding: 8px 25px 7px 25px;
+  letter-spacing: 0.09rem;
+  opacity: 0.9;
+}
+.buttonFalse:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=output.css.map */
