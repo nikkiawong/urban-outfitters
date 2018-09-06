@@ -1,7 +1,78 @@
 @import "input";
 
+.bold {
+  font-weight: bold;
+}
+
+.full-width-nav {
+  margin-bottom: 20px;
+}
 
 h1 {
   font-weight: lighter;
   font-size: 24px;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+.womens-menu {
+  text-align: center;
+  margin-bottom: 60px;
+  ul {
+    list-style-position: inside; padding-left: 0;
+    li {
+      display: inline;
+      width: (100% / 6);
+      padding: 10px;
+      &:hover {
+        color: $light-gray;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.directory {
+  text-align: center;
+  margin-bottom: 40px;
+  ul {
+    list-style-position: inside; padding-left: 0;
+    li {
+      display: inline;
+      width: (100% / 6);
+      padding: 10px;
+      &:hover {
+        color: $light-gray;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.product-body {
+  @include rowStyle;
+}
+
+.picture-column {
+  @include rowStyle;
+}
+
+.thumbnail {
+  width: 200px;
+  img {
+    width: 100%;
+  }
+  @include columnStyle;
+}
+
+.big-picture {
+  width: 30%;
+  @include columnStyle;
+}
+
+.detail-column {
+  margin-left: 50px;
 }
