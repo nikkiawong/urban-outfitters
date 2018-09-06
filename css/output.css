@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1441px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-links ul li {
+  display: inline;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  max-width: 1441px;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-images {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=output.css.map */
